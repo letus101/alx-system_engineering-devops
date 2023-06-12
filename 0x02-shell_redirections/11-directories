@@ -1,0 +1,7 @@
+#!/bin/bash
+
+# Subtracting 2 to exclude current directory (.) and parent directory (..)
+num_dirs=$(find . -type d | wc -l)
+num_subdirs=$((num_dirs - 2))
+
+echo $num_subdirs
